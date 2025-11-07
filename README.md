@@ -4,8 +4,11 @@
 
 ```bash
 # Build locally:
-docker build -t local-myapp:dev .
-docker run --rm -p 3000:3000 local-myapp:dev
+docker build -t ci-cd-myapp:latest .
+docker run --rm -p 5000:5000 ci-cd-myapp:latest
+
+docker tag ci-cd-myapp:latest krishnaveni29/ci-cd-myapp:latest
+docker push krishnaveni29/ci-cd-myapp:latest
 # check http://localhost:3000
 
 # Test with Minikube locally:
