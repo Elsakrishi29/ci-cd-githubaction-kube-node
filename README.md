@@ -31,6 +31,8 @@ curl $(minikube ip):32228
 git config --global user.name "Elsakrishi29"
 ssh-keygen -t ed25519 -C "krishveni2902@gmail.com"
 
+https://github.com/Elsakrishi29/ci-cd-githubaction-kube-node/settings/actions/runners/new
+
 # Test with Minikube locally:
 
 # make minikube use its own docker
