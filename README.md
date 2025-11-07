@@ -28,7 +28,8 @@ curl http://192.168.49.2:32228
 (OR)
 curl $(minikube ip):32228
 
-
+git config --global user.name "Elsakrishi29"
+ssh-keygen -t ed25519 -C "krishveni2902@gmail.com"
 
 # Test with Minikube locally:
 
