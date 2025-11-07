@@ -11,6 +11,25 @@ docker tag ci-cd-myapp:latest krishnaveni29/ci-cd-myapp:latest
 docker push krishnaveni29/ci-cd-myapp:latest
 # check http://localhost:3000
 
+# Deployment YAML k8s/deployment.yaml
+# Service YAML k8s/service.yaml
+
+kubectl get nodes
+kubectl apply -f k8s/deployment.yaml
+kubectl apply -f k8s/service.yaml
+
+kubectl get pods
+kubectl get svc
+
+# Run the app
+minikube service myapp-svc
+(OR)
+curl http://192.168.49.2:32228 
+(OR)
+curl $(minikube ip):32228
+
+
+
 # Test with Minikube locally:
 
 # make minikube use its own docker
